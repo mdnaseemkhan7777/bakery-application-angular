@@ -1,0 +1,16 @@
+<p>template-driven works!</p>
+<div class="container mt-5">
+    <form  class="form-control" #loginForm="ngForm" (ngSubmit)="userLogin(loginForm.value)">
+        <h1 class="text-center">login</h1>
+        <div class="text-center form-group">
+            <input type="text" class="m-2 form-control" name="email" ngModel placeholder="Email">
+        </div>
+        <div class="text-center form-group">
+            <input type="password" class="m-2 my-3 form-control " name="password" ngModel placeholder="Password">
+        </div>
+        <div class="text-center">
+            <button class="btn btn-danger m-3 " >Submit</button>
+        </div>
+
+    </form>
+</div>

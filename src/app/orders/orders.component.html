@@ -1,0 +1,69 @@
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Store</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" routerLink="/" href="">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " routerLink="/customer">Customer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/items">Items</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " routerLink="/order">Order</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active " routerLink="/orders">Orders</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- table -->
+
+  
+  <div class="container mt-3">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Customer Name</th>
+          <th scope="col">City</th>
+          <th scope="col">Email</th>
+          <th scope="col">Address</th>
+          <th scope="col">Phone</th>
+          <th scope="col">Items </th>
+          <th scope="col">Total</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let row of customerData ">
+          <td>{{row.id}}</td>
+          <td>{{row.cusName}}</td>
+          <td>{{row.city}}</td>
+          <td>{{row.email}}</td>
+          <td>{{row.address}}</td>
+          <td>{{row.phone}}</td>
+          <td>{{row.items.length}}</td>
+          <td>{{row.gTotal}}</td>
+          <td class="text-right">
+            <button (click)="onActivate(row.id)"   class="btn btn-success  pl-3 pr-3 mx-2" data-target="#exampleModal"><i
+                class="fa fa-pencil"></i> </button>
+            <button  (click)="deleteOrderList(row)" class="btn btn-danger pl-3 "><i class="fa fa-trash"></i>
+            </button>
+          </td>
+        </tr>
+  
+      </tbody>
+    </table>
+

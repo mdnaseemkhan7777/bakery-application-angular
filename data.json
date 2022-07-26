@@ -1,0 +1,420 @@
+{
+  "loginUsersList": [
+    {
+      "email": "naseem@gmail.com",
+      "password": "123456",
+      "id": 1
+    },
+    {
+      "email": "naseem@gmail.com",
+      "password": "123456",
+      "id": 2
+    },
+    {
+      "email": "ali@gmail.com",
+      "password": "1234565",
+      "id": 3
+    },
+    {
+      "email": "mdnaseemkhan7777@gmail.com",
+      "password": "123456",
+      "id": 4
+    }
+  ],
+  "posts": [
+    {
+      "id": 12,
+      "cusName": "aHedley Rosales",
+      "city": "Non est tempor omnis",
+      "email": "fuwugiwuny@mailinator.com",
+      "address": "Magnam et et alias n",
+      "phone": "+1 (674) 689-7965"
+    },
+    {
+      "id": 13,
+      "cusName": "ghalib",
+      "city": "karachi",
+      "email": "wokit@mailinator.com",
+      "address": "Aliqua Corporis acc",
+      "phone": "123456"
+    },
+    {
+      "cusName": "Malcolm Vincent",
+      "city": "Et quis id exercitat",
+      "email": "dujeme@mailinator.com",
+      "address": "Incididunt officia e",
+      "phone": "+1 (441) 152-5036",
+      "id": 15
+    },
+    {
+      "cusName": "Maite Clements",
+      "city": "Dicta ipsam sint ar",
+      "email": "jawepa@mailinator.com",
+      "address": "Inventore quos omnis",
+      "phone": "+1 (128) 224-5552",
+      "id": 16
+    },
+    {
+      "cusName": "Lareina Moody",
+      "city": "Autem lorem dolore e",
+      "email": "gepyciq@mailinator.com",
+      "address": "In tempore sit et ",
+      "phone": "+1 (212) 426-4488",
+      "id": 17
+    },
+    {
+      "cusName": "Ali Perry",
+      "city": "Voluptatem sint quis",
+      "email": "kopuwa@mailinator.com",
+      "address": "At enim occaecat bea",
+      "phone": "+1 (377) 779-9349",
+      "id": 18
+    },
+    {
+      "cusName": "Hayes Bird",
+      "city": "Sequi deserunt quod ",
+      "email": "syferit@mailinator.com",
+      "address": "Nostrud molestias no",
+      "phone": "+1 (779) 943-1339",
+      "id": 19
+    },
+    {
+      "cusName": "Aimee Witt",
+      "city": "Maiores est duis et ",
+      "email": "dibe@mailinator.com",
+      "address": "Odio aspernatur cons",
+      "phone": "+1 (672) 828-2045",
+      "id": 23
+    },
+    {
+      "id": 24,
+      "cusName": "Yen Carveraaaaaaaaaaaa",
+      "city": "Quod assumenda volup",
+      "email": "likyzujose@mailinator.com",
+      "address": "Elit adipisci dolor",
+      "phone": "+1 (915) 628-8093"
+    },
+    {
+      "cusName": "Cheyenne Avery",
+      "city": "In ullam aut impedit",
+      "email": "wuxyva@mailinator.com",
+      "address": "Sequi eaque irure pr",
+      "phone": "+1 (409) 361-2473",
+      "id": 25
+    },
+    {
+      "cusName": "Carissa Acevedo",
+      "city": "Vel illum enim nece",
+      "email": "peseka@mailinator.com",
+      "address": "Quo laudantium dolo",
+      "phone": "+1 (753) 399-1658",
+      "id": 26
+    },
+    {
+      "cusName": "Nadine Bond",
+      "city": "At consequuntur hic ",
+      "email": "neqil@mailinator.com",
+      "address": "Fugit sunt laborum ",
+      "phone": "+1 (515) 712-1647",
+      "id": 27
+    },
+    {
+      "cusName": "Fiona Foreman",
+      "city": "Aut qui eveniet dol",
+      "email": "ninyt@mailinator.com",
+      "address": "Adipisicing numquam ",
+      "phone": "+1 (907) 521-9819",
+      "id": 28
+    },
+    {
+      "cusName": "Tatum Rice",
+      "city": "Maxime non voluptate",
+      "email": "jufytevi@mailinator.com",
+      "address": "Est soluta voluptate",
+      "phone": "+1 (579) 649-6419",
+      "id": 29
+    },
+    {
+      "cusName": "Clinton Cortez",
+      "city": "Consequatur error e",
+      "email": "syxizyzonu@mailinator.com",
+      "address": "Consequatur esse qu",
+      "phone": "+1 (807) 298-8074",
+      "id": 30
+    },
+    {
+      "id": 31,
+      "cusName": "naseem",
+      "city": "karachi",
+      "email": "vewyja@mailinator.com",
+      "address": "orangi",
+      "phone": "+1 (343) 143-5116"
+    },
+    {
+      "id": 33,
+      "cusName": "hassankahn",
+      "city": "karachi",
+      "email": "hassan@gmail.com",
+      "address": "orangi",
+      "phone": "258258"
+    },
+    {
+      "cusName": "Leroy Moran",
+      "city": "Eum mollit aliquip q",
+      "email": "xofymyc@mailinator.com",
+      "address": "Atque veniam error ",
+      "phone": "+1 (734) 927-6719",
+      "id": 34
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "items": "cake",
+      "quantity": 55,
+      "price": 58
+    },
+    {
+      "id": 2,
+      "items": "papao",
+      "quantity": 5,
+      "price": 99
+    },
+    {
+      "id": 13,
+      "items": "burger",
+      "quantity": 2,
+      "price": 200
+    },
+    {
+      "items": "pestries",
+      "quantity": 1,
+      "price": 50,
+      "id": 14
+    },
+    {
+      "items": "bnana",
+      "quantity": 1,
+      "price": 20,
+      "id": 15
+    },
+    {
+      "items": "pizza",
+      "quantity": 1,
+      "price": 500,
+      "id": 16
+    },
+    {
+      "id": 17,
+      "items": "pasta",
+      "quantity": 2,
+      "price": 5
+    }
+  ],
+  "order": [
+    {
+      "id": 1,
+      "cusId": "33",
+      "cusName": "hassan",
+      "city": "karachi",
+      "email": "hassan@gmail.com",
+      "address": "orangi town karachi",
+      "phone": "258258",
+      "gTotal": "1316.00",
+      "items": [
+        {
+          "item": 13,
+          "quantity": 4,
+          "price": 200,
+          "total": 800
+        },
+        {
+          "item": 1,
+          "quantity": 2,
+          "price": 58,
+          "total": 116
+        },
+        {
+          "item": 14,
+          "quantity": 8,
+          "price": 50,
+          "total": 400
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "cusId": "31",
+      "cusName": "naseem",
+      "city": "karachi",
+      "email": "vewyja@mailinator.com",
+      "address": "orangi",
+      "phone": "+1 (343) 143-5116",
+      "gTotal": "858.00",
+      "items": [
+        {
+          "item": 10,
+          "quantity": 2,
+          "price": 225,
+          "total": 450
+        },
+        {
+          "item": 3,
+          "quantity": 8,
+          "price": 51,
+          "total": 408
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "cusId": "29",
+      "cusName": "Tatum Rice",
+      "city": "s",
+      "email": "jufytevi@mailinator.com",
+      "address": "Est soluta voluptate",
+      "phone": "+1 (579) 649-6419",
+      "gTotal": "1575.00",
+      "items": [
+        {
+          "item": 10,
+          "quantity": 7,
+          "price": 225,
+          "total": 1575
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "cusId": "30",
+      "cusName": "Clinton Cortez",
+      "city": "Consequatur",
+      "email": "syxizyzonu@mailinator.com",
+      "address": "Consequatur esse qu",
+      "phone": "+1 (807) 298-8074",
+      "gTotal": "58.00",
+      "items": [
+        {
+          "item": 14,
+          "quantity": 1,
+          "price": 50,
+          "total": 58
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "cusId": "18",
+      "cusName": "Ali Perry",
+      "city": "Voluptatem ",
+      "email": "kopuwa@mailinator.com",
+      "address": "At enim occaecat bea",
+      "phone": "+1 (377) 779-9349",
+      "gTotal": "3605.00",
+      "items": [
+        {
+          "item": 3,
+          "quantity": 5,
+          "price": 51,
+          "total": 3605
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "cusId": "34",
+      "cusName": "jawad",
+      "city": "mirpur khas",
+      "email": "jawad@gmail.com",
+      "address": "kuch bhe",
+      "phone": "92112456",
+      "gTotal": "2541.00",
+      "items": [
+        {
+          "item": 1,
+          "quantity": 2,
+          "price": 58,
+          "total": 116
+        },
+        {
+          "item": 14,
+          "quantity": 8,
+          "price": 50,
+          "total": 400
+        },
+        {
+          "item": 10,
+          "quantity": 9,
+          "price": 225,
+          "total": 2025
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "cusId": "17",
+      "cusName": "Lareina Moody",
+      "city": "Autem lorem dolore e",
+      "email": "gepyciq@mailinator.com",
+      "address": "In tempore sit et ",
+      "phone": "+1 (212) 426-4488",
+      "gTotal": "450.00",
+      "items": [
+        {
+          "item": 10,
+          "quantity": 2,
+          "price": 225,
+          "total": 450
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "cusId": "23",
+      "cusName": "Aimee Witt",
+      "city": "Maiores ",
+      "email": "dibe@mailinator.com",
+      "address": "Odio aspernatur cons",
+      "phone": "+1 (672) 828-2045",
+      "gTotal": "1344.00",
+      "items": [
+        {
+          "item": 4,
+          "quantity": 1,
+          "price": 286,
+          "total": 286
+        },
+        {
+          "item": 1,
+          "quantity": 8,
+          "price": 58,
+          "total": 464
+        },
+        {
+          "item": 2,
+          "quantity": 6,
+          "price": 99,
+          "total": 594
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "cusId": "13",
+      "cusName": "ghalib",
+      "city": "karachi",
+      "email": "wokit@mailinator.com",
+      "address": "Aliqua Corporis acc",
+      "phone": "123456",
+      "gTotal": "80.00",
+      "items": [
+        {
+          "item": 15,
+          "quantity": 4,
+          "price": 20,
+          "total": 80
+        }
+      ]
+    }
+  ]
+}

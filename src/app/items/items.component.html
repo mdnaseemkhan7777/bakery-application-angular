@@ -1,0 +1,191 @@
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Store</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" routerLink="/" href="">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/customer">Customer</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" routerLink="/items">Items</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " routerLink="/order">Order</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  " routerLink="/orders">Orders</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Add Items
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">ADD Items</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form class="form-control" [formGroup]="itemsValue">
+          <h1 class="text-center">Items</h1>
+          <div class="text-center form-group">
+            <input type="text" class="m-2 form-control" name="items" formControlName="items" placeholder="items Name">
+      
+          </div>
+          <div class="text-center form-group">
+            <input type="number" class="m-2 my-3 form-control " name="quantity" formControlName="quantity"
+              placeholder="quantity">
+      
+          </div>
+          <div class="text-center form-group">
+            <input type="number" class="m-2 my-3 form-control " name="price" formControlName="price" placeholder="price">
+      
+          </div>
+          <div class="text-center">
+            <button class="btn btn-danger m-3 " *ngIf="showAdd" (click)="addItems()">Submit</button>
+            <button type="button" *ngIf="showUpdate" (click)="updateItemsDetails()" class="btn btn-primary">Update</button>
+          </div>
+      
+        </form>
+      </div>
+      <div class="modal-footer">
+        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal -->
+<!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-primary" *ngIf="showAddTitle" id="exampleModalLabel">Add New Data</h5>
+        <h5 class="modal-title text-primary" *ngIf="showUpdateTitle" id="exampleModalLabel">Update Data</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="formValue">
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input formControlName="firstName" id="firstName" class="form-control" placeholder="Enter First Name.."
+              required>
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input id="lastName" formControlName="lastName" type="text" class="form-control"
+              placeholder="Enter Last Name.." required>
+          </div>
+          <div class="form-group">
+            <label for="Email">Email</label>
+            <input id="Email" type="email" formControlName="Email" class="form-control" placeholder="Enter email.."
+              required> <br>
+          </div>
+          <div class="form-group">
+            <label for="Mobile">Mobile Number</label>
+            <input id="Mobile" type="text" formControlName="Mobile" class="form-control"
+              placeholder="Enter Mobile Number.." required> <br>
+
+          </div>
+          <div class="form-group">
+            <label for="Salary">Salary</label>
+            <input id="text" type="text" formControlName="Salary" class="form-control" placeholder="Enter Salary.."
+              required> <br>
+
+
+          </div>
+
+          <button type="button" id="cancel" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          <input type="submit" *ngIf="showAdd" (click)="postEmployeeDetails()" class="btn btn-primary mx-2"
+            value="Save">
+          <button type="button" *ngIf="showUpdate" (click)="updateEmployeeDetails()"
+            class="btn btn-primary">Update</button>
+
+
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div> -->
+
+
+<!-- form -->
+<!-- <div class="container mt-2">
+  <form class="form-control" [formGroup]="itemsValue">
+    <h1 class="text-center">Items</h1>
+    <div class="text-center form-group">
+      <input type="text" class="m-2 form-control" name="items" formControlName="items" placeholder="items Name">
+
+    </div>
+    <div class="text-center form-group">
+      <input type="number" class="m-2 my-3 form-control " name="quantity" formControlName="quantity"
+        placeholder="quantity">
+
+    </div>
+    <div class="text-center form-group">
+      <input type="number" class="m-2 my-3 form-control " name="price" formControlName="price" placeholder="price">
+
+    </div>
+    <div class="text-center">
+      <button class="btn btn-danger m-3 " *ngIf="showAdd" (click)="addItems()">Submit</button>
+      <button type="button" *ngIf="showUpdate" (click)="updateItemsDetails()" class="btn btn-primary">Update</button>
+    </div>
+
+  </form>
+</div> -->
+
+
+<!-- table -->
+<hr>
+<div class="container mt-3">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Items Name</th>
+        <th scope="col">Quantity</th>
+        <th scope="col">Price</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of itemsData">
+        <td>{{row.id}}</td>
+        <td>{{row.items}}</td>
+        <td>{{row.quantity}}</td>
+        <td>{{row.price}}</td>
+        <td class="text-right">
+          <button (click)="updateItems(row)" class="btn btn-success  pl-3 pr-3 mx-2" data-target="#exampleModal"><i
+              class="fa fa-pencil"></i> </button>
+          <button (click)="deleteItems(row)" class="btn btn-danger pl-3 "><i class="fa fa-trash"></i>
+          </button>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>

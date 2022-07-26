@@ -1,0 +1,127 @@
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Store</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" routerLink="/" href="">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/customer">Customer</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " routerLink="/items">Items</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" routerLink="/order">Order</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  " routerLink="/orders">Orders</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<form class="form-control" [formGroup]="formValue">
+  <div class="container mt-2">
+
+    <h1 class="text-center">Order</h1>
+    <!-- dropdown -->
+    <div class="col-sm-12">
+
+      <select class="form-control" formControlName="cusId" (change)="onSelectCustomer($event)">
+        <option *ngFor="let row of customerData" [value]="row.id">
+          {{row.cusName}}
+        </option>
+      </select>
+    </div>
+    <!-- <div class="text-center form-group">
+      <input type="text" class="m-2 form-control" name="cusName" formControlName="cusName" placeholder="Customer Name">
+
+    </div>  -->
+    <div class="text-center form-group">
+      <input type="text" class="m-2 my-3 form-control " name="city" formControlName="city" placeholder="city">
+
+    </div>
+    <div class="text-center form-group">
+      <input type="email" class="m-2 my-3 form-control " name="email" formControlName="email" placeholder="Email">
+
+    </div>
+    <div class="text-center form-group">
+      <input type="text" class="m-2 my-3 form-control " name="address" formControlName="address" placeholder="address">
+
+    </div>
+    <div class="text-center form-group">
+      <input type="text" class="m-2 my-3 form-control " name="phone" formControlName="phone" placeholder="phone">
+
+    </div>
+    <div class="text-center">
+      <button class="btn btn-danger m-3 " (click)="addOrder()">Submit</button>
+      <button type="button" (click)="updateDataOrderList()" class="btn btn-primary">Update</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <table class="table border">
+      <thead>
+        <tr>
+          <th scope="col">
+            <button style="margin: 0px" (click)="addRow()" class="btn btn-raised btn-sm btn-success font"><i
+                class="fa fa-plus"></i></button>
+
+          </th>
+          <th scope="col">items</th>
+          <th scope="col">no of quantity</th>
+          <th scope="col">Price </th>
+          <th scope="col">Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <ng-container formArrayName="items" *ngFor="let row of getRows() ; let i=index;let l=last;let f=first">
+          <tr [formGroupName]="i">
+            <td scope="row">
+              <button *ngIf="getRows().length > 1" (click)="deleteOrder(i)" style="margin: 0px"
+                class="btn btn-raised btn-sm btn-danger font"><i class="fa fa-trash-o"></i></button>
+            </td>
+            <td>
+              <select class="form-control" formControlName="item" (change)="onSelectItem($event,i)">
+                <option *ngFor="let row of itemsData" [value]="row.id">
+                  {{row.items}}
+                </option>
+              </select>
+            </td>
+            <td>
+              <input type="number" class=" form-control " formControlName="quantity" placeholder="quantity" #box
+                (keyup)="onChangeQuantity($event, i)">
+            </td>
+            <td>
+              <input type="number" class=" form-control " formControlName="price" placeholder="price" readonly="true">
+            </td>
+            <td>
+              <input type="number" class=" form-control " formControlName="total" placeholder="total" readonly="true">
+
+            </td>
+          </tr>
+        </ng-container>
+
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3"></td>
+          <td>Grand Total</td>
+          <td>
+            <input type="number" class=" form-control " formControlName="gTotal" placeholder="Grand total"
+              readonly="true">
+          </td>
+
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</form>

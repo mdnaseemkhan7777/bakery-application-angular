@@ -1,0 +1,19 @@
+import { Component, OnInit } from '@angular/core';
+
+
+@Component({
+  selector: 'app-template-driven',
+  templateUrl: './template-driven.component.html',
+  styleUrls: ['./template-driven.component.css']
+})
+export class TemplateDrivenComponent implements OnInit {
+  userLogin(item:any){
+    console.warn(item);
+  }
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+}
